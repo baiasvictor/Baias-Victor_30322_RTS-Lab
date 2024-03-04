@@ -11,27 +11,21 @@ public class Main {
     // Method to return a string representation of the complex number
 
     static void addition(int i1, int i2) {
-
         int real = 2 + 4;
-        int imaginary = 5*i1-i2;
+        int imaginary = 5*i1 + i2;
         System.out.println(real + " + " + imaginary + "*i");
-
     }
 
     static void subtraction(int i1, int i2) {
-
         int real = 2 - 4;
-        int imaginary = 5*i1+i2;
-        System.out.println(real + " - " + imaginary + "i");
-
+        int imaginary = 5*i1 - i2;
+        System.out.println(real + " - " + Math.abs(imaginary) + "*i");
     }
 
     static void multiplication(int i1, int i2) {
-
-        int real = 2 * 4;
-        int imaginary = 5*i1*i2;
-        System.out.println(real + " * " + imaginary + "i");
-
+        int real = 2 * 4 - 5 * i1 * i2;
+        int imaginary = 5 * i1 + i2;
+        System.out.println(real + " + " + imaginary + "*i");
     }
 
     static void complex_nr(int var, int i1, int i2) {
@@ -97,6 +91,7 @@ public class Main {
         }
         return result;
     }
+
     static void random_ex (){
         int[] numbers = new int[10];
 
